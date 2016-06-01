@@ -110,7 +110,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Dependencies\ReadZeroTestsFromFile.ProblemSolving.dll" />
     <Content Include="Input\Input.txt" />
     <Content Include="ReadZeroTestsFromFIle.ico" />
   </ItemGroup>
