@@ -49,6 +49,9 @@
       <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="ReadZeroTestsFromFile.ProblemSolving">
+      <HintPath>..\..\ReadZeroTestsFromFile\ReadZeroTestsFromFile.ProblemSolving\bin\Debug\ReadZeroTestsFromFile.ProblemSolving.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ConsoleApplication1.Infrastructure;
 using Microsoft.Practices.Unity;
+using ReadZeroTestsFromFile.ProblemSolving.Input;
 
 namespace ConsoleApplication1
 {
@@ -12,11 +13,26 @@ namespace ConsoleApplication1
     {
         static void Main()
         {
-            var unityContainer = new UnityContainer();
-            UnityConfigurator.RegisterTypes(unityContainer);
+            TextFileInputReader x;
+            try
+            {
+                x = new TextFileInputReader("asdasda");
+            }
+            catch (Exception)
+            {
+                
+            }
+            
 
-            var problemSolver = unityContainer.Resolve<MyProblemSolver>();
-            problemSolver.SolveProblem();
+            var assemblies = AppDomain.CurrentDomain.GetAssemblies();
+
+            foreach (var assembly in assemblies)
+            {
+                Console.WriteLine(assembly.FullName);
+                var pbta = assembly.GetName().GetPublicKeyToken();
+                var str = Encoding.Default.GetString(pbta);
+                Console.WriteLine(str);
+            }
         }
     }
 }
