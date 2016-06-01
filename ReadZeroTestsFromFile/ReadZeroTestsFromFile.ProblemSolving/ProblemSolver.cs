@@ -14,6 +14,12 @@ namespace ReadZeroTestsFromFile.ProblemSolving
         public void SolveProblem()
         {
             var nextInput = _inputParser.ParseNextInputPart();
+            while (!nextInput.IsEmpty)
+            {
+                GenerateOutputForCurrentInputLine(nextInput.GetNextLine());
+
+                nextInput = _inputParser.ParseNextInputPart();
+            }
         }
 
         protected abstract void GenerateOutputForCurrentInputLine(string currentInputLine);
