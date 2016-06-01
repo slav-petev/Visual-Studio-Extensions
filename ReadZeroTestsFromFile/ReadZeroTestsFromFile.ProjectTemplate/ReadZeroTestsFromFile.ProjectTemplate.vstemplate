@@ -13,12 +13,20 @@
     <ProvideDefaultName>true</ProvideDefaultName>
   </TemplateData>
   <TemplateContent>
+    <!--<References>
+      <Reference>
+        <Assembly>
+          ReadZeroTestsFromFile.ProblemSolving, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+        </Assembly>
+      </Reference>
+    </References>-->
     <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       <Folder Name="Input">
         <ProjectItem>Input.txt</ProjectItem>
       </Folder>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">MyProblemSolver.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="false">Program.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

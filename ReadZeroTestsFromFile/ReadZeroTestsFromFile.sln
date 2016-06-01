@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadZeroTestsFromFile.Proje
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadZeroTestsFromFile.Extension", "ReadZeroTestsFromFile.Extension\ReadZeroTestsFromFile.Extension.csproj", "{96B1AFBD-E1FA-4298-A24E-1FA593CBFA0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadZeroTestsFromFile.ProblemSolving", "ReadZeroTestsFromFile.ProblemSolving\ReadZeroTestsFromFile.ProblemSolving.csproj", "{581AC23E-8FD8-44FE-B0B8-3917C3D8532B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{96B1AFBD-E1FA-4298-A24E-1FA593CBFA0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96B1AFBD-E1FA-4298-A24E-1FA593CBFA0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96B1AFBD-E1FA-4298-A24E-1FA593CBFA0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{581AC23E-8FD8-44FE-B0B8-3917C3D8532B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{581AC23E-8FD8-44FE-B0B8-3917C3D8532B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{581AC23E-8FD8-44FE-B0B8-3917C3D8532B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{581AC23E-8FD8-44FE-B0B8-3917C3D8532B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

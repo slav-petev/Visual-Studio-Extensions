@@ -45,6 +45,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="Input\Input.txt" />
+    <Compile Include="MyProblemSolver.cs" />
     <Compile Include="Program.cs" />
 		<Compile Include="Properties\AssemblyInfo.cs" />
 	</ItemGroup>
