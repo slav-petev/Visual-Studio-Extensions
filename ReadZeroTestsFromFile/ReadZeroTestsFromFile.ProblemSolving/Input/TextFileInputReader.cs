@@ -11,9 +11,9 @@ namespace ReadZeroTestsFromFile.ProblemSolving.Input
 
         public string FilePath { get; set; }
 
-        public TextFileInputReader(string filePath)
+        public TextFileInputReader(/*string filePath*/)
         {
-            FilePath = filePath;
+            FilePath = @"../../Input/Input.txt";
             _fileInputReader = new StreamReader(FilePath);
         }
 

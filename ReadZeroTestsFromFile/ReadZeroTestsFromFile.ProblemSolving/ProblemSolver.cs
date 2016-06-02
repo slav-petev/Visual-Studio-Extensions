@@ -1,4 +1,5 @@
-﻿using ReadZeroTestsFromFile.ProblemSolving.Input;
+﻿using System;
+using ReadZeroTestsFromFile.ProblemSolving.Input;
 
 namespace ReadZeroTestsFromFile.ProblemSolving
 {
@@ -13,15 +14,32 @@ namespace ReadZeroTestsFromFile.ProblemSolving
 
         public void SolveProblem()
         {
-            var nextInput = _inputParser.ParseNextInputPart();
-            while (!nextInput.IsEmpty)
+            var currentInput = _inputParser.ParseNextInput();
+            while (!currentInput.IsEmpty)
             {
-                GenerateOutputForCurrentInputLine(nextInput.GetNextLine());
+                var currentOutput = GenerateOutputForCurrentInput(currentInput);
 
-                nextInput = _inputParser.ParseNextInputPart();
+                Console.WriteLine(currentOutput);
+                currentInput = _inputParser.ParseNextInput();
             }
         }
 
-        protected abstract void GenerateOutputForCurrentInputLine(string currentInputLine);
+        protected abstract string GenerateOutputLineForCurrentInputLine(string currentInputLine);
+
+        private Output.Output GenerateOutputForCurrentInput(Input.Input currentInput)
+        {
+            var output = new Output.Output();
+
+            var currentInputLine = currentInput.GetNextInputLine();
+            while (!string.IsNullOrEmpty(currentInputLine))
+            {
+                var currentOutputLine = GenerateOutputLineForCurrentInputLine(currentInputLine);
+                output.AddOutputLine(currentOutputLine);
+
+                currentInputLine = currentInput.GetNextInputLine();
+            }
+
+            return output;
+        }
     }
 }

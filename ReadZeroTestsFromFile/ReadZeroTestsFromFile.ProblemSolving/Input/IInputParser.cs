@@ -2,6 +2,6 @@
 {
     public interface IInputParser
     {
-        Input ParseNextInputPart();
+        Input ParseNextInput();
     }
 }

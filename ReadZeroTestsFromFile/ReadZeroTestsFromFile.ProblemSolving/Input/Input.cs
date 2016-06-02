@@ -14,7 +14,7 @@ namespace ReadZeroTestsFromFile.ProblemSolving.Input
             _inputLines.AddLast(inputLine);
         }
 
-        public string GetNextLine()
+        public string GetNextInputLine()
         {
             if (_inputLines.Count == 0)
             {

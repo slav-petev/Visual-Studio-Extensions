@@ -11,7 +11,7 @@
             _inputReader = inputReader;
         }
 
-        public Input ParseNextInputPart()
+        public Input ParseNextInput()
         {
             var nextInput = new Input();
 
