@@ -32,7 +32,9 @@
 	</PropertyGroup>
 	<ItemGroup>
     <Reference Include="ReadZeroTestsFromFile.ProblemSolving, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5af810053e34b664">
-      <HintPath>$(TargetDir)\ReadZeroTestsFromFile.ProblemSolving.dll</HintPath>
+      <HintPath>
+        <HintPath>..\..\libs\ReadZeroTestsFromFile.ProblemSolving.dll</HintPath>
+      </HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System"/>
@@ -49,6 +51,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="Input\Input.txt" />
+    <None Include="libs\ReadZeroTestsFromFile.ProblemSolving.dll" />
     <Compile Include="MyProblemSolver.cs" />
     <Compile Include="Program.cs" />
 		<Compile Include="Properties\AssemblyInfo.cs" />

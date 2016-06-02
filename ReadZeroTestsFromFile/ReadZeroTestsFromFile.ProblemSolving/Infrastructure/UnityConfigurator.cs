@@ -1,5 +1,6 @@
 ﻿using Microsoft.Practices.Unity;
 using ReadZeroTestsFromFile.ProblemSolving.Input;
+using ReadZeroTestsFromFile.ProblemSolving.Output;
 
 namespace ReadZeroTestsFromFile.ProblemSolving.Infrastructure
 {
@@ -18,6 +19,8 @@ namespace ReadZeroTestsFromFile.ProblemSolving.Infrastructure
             container.RegisterType<IInputReader, ConsoleInputReader>();
 #endif
             container.RegisterType<IInputParser, InputParser>();
+
+            container.RegisterType<IOutputWriter, ConsoleOutputWriter>();
         }
     }
 }

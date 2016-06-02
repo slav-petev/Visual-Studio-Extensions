@@ -6,7 +6,8 @@ namespace ReadZeroTestsFromFile.ProjectTemplate
 {
     public class MyProblemSolver : ProblemSolver
     {
-        public MyProblemSolver(IInputParser inputParser) : base(inputParser)
+        public MyProblemSolver(IInputParser inputParser, IOutputWriter outputWriter) : 
+            base(inputParser, outputWriter)
         {
         }
 

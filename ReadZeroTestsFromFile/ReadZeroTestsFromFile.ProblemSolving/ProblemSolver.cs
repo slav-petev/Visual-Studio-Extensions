@@ -1,15 +1,18 @@
 ﻿using System;
 using ReadZeroTestsFromFile.ProblemSolving.Input;
+using ReadZeroTestsFromFile.ProblemSolving.Output;
 
 namespace ReadZeroTestsFromFile.ProblemSolving
 {
     public abstract class ProblemSolver
     {
         private readonly IInputParser _inputParser;
+        private readonly IOutputWriter _outputWriter;
 
-        protected ProblemSolver(IInputParser inputParser)
+        protected ProblemSolver(IInputParser inputParser, IOutputWriter outputWriter)
         {
             _inputParser = inputParser;
+            _outputWriter = outputWriter;
         }
 
         public void SolveProblem()
@@ -19,7 +22,7 @@ namespace ReadZeroTestsFromFile.ProblemSolving
             {
                 var currentOutput = GenerateOutputForCurrentInput(currentInput);
 
-                Console.WriteLine(currentOutput);
+                _outputWriter.WriteOutput(currentOutput);
                 currentInput = _inputParser.ParseNextInput();
             }
         }

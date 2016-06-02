@@ -71,6 +71,7 @@
     <Compile Include="Input\Input.cs" />
     <Compile Include="Input\InputParser.cs" />
     <Compile Include="Input\TextFileInputReader.cs" />
+    <Compile Include="Output\ConsoleOutputWriter.cs" />
     <Compile Include="Output\IOutputWriter.cs" />
     <Compile Include="Output\Output.cs" />
     <Compile Include="ProblemSolver.cs" />
@@ -83,7 +84,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)"</PostBuildEvent>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)\ReadZeroTestsFromFile.ProjectTemplate\libs"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
