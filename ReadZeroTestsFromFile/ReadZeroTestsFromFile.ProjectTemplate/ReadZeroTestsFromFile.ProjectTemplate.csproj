@@ -123,6 +123,10 @@
     <Content Include="ReadZeroTestsFromFIle.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ReadZeroTestsFromFile.ConfigurationWizard\ReadZeroTestsFromFile.ConfigurationWizard.csproj">
+      <Project>{e9fc6dbb-be43-489b-a055-a96c4fa7789c}</Project>
+      <Name>ReadZeroTestsFromFile.ConfigurationWizard</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ReadZeroTestsFromFile.ProblemSolving\ReadZeroTestsFromFile.ProblemSolving.csproj">
       <Project>{581ac23e-8fd8-44fe-b0b8-3917c3d8532b}</Project>
       <Name>ReadZeroTestsFromFile.ProblemSolving</Name>

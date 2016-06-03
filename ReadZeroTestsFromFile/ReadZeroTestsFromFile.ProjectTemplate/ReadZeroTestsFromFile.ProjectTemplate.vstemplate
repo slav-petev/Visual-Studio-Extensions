@@ -30,7 +30,7 @@
     </Project>
   </TemplateContent>
   <WizardExtension>
-    <Assembly>ReadZeroTestsFromFile.Extension, Version=1.0.0.0, Culture=neutral, PublicKeyToken=411e5b506a948d1a</Assembly>
-    <FullClassName> ReadZeroTestsFromFile.Extension.InitializationWizard</FullClassName>
+    <Assembly>ReadZeroTestsFromFile.ConfigurationWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e6062d25b0114e0</Assembly>
+    <FullClassName> ReadZeroTestsFromFile.ConfigurationWizard.ProjectConfigurationWizard</FullClassName>
   </WizardExtension>
 </VSTemplate>

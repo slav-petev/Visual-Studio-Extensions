@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadZeroTestsFromFile.Exten
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadZeroTestsFromFile.ProblemSolving", "ReadZeroTestsFromFile.ProblemSolving\ReadZeroTestsFromFile.ProblemSolving.csproj", "{581AC23E-8FD8-44FE-B0B8-3917C3D8532B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadZeroTestsFromFile.ConfigurationWizard", "ReadZeroTestsFromFile.ConfigurationWizard\ReadZeroTestsFromFile.ConfigurationWizard.csproj", "{E9FC6DBB-BE43-489B-A055-A96C4FA7789C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{581AC23E-8FD8-44FE-B0B8-3917C3D8532B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{581AC23E-8FD8-44FE-B0B8-3917C3D8532B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{581AC23E-8FD8-44FE-B0B8-3917C3D8532B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9FC6DBB-BE43-489B-A055-A96C4FA7789C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9FC6DBB-BE43-489B-A055-A96C4FA7789C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9FC6DBB-BE43-489B-A055-A96C4FA7789C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9FC6DBB-BE43-489B-A055-A96C4FA7789C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
