@@ -2,9 +2,9 @@
 
 namespace ReadZeroTestsFromFile.ProblemSolving.Input
 {
-    public class ConsoleInputreader : IInputReader
+    public class ConsoleInputReader : IInputReader
     {
-        public string ReadNextInputPart()
+        public string ReadNextInputLine()
         {
             return Console.ReadLine();
         }

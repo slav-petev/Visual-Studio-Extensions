@@ -2,6 +2,6 @@
 {
     public interface IOutputWriter
     {
-        void WriteOutput<TOutput>(TOutput output);
+        void WriteOutput(Output output);
     }
 }

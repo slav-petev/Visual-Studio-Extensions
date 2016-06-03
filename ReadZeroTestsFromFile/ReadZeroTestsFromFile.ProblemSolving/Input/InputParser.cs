@@ -15,13 +15,13 @@
         {
             var nextInput = new Input();
 
-            var nextInputLine = _inputReader.ReadNextInputPart();
+            var nextInputLine = _inputReader.ReadNextInputLine();
             while (!string.IsNullOrEmpty(nextInputLine) && 
                 nextInputLine != InputTerminator)
             {
                 nextInput.AddInputLine(nextInputLine);
 
-                nextInputLine = _inputReader.ReadNextInputPart();
+                nextInputLine = _inputReader.ReadNextInputLine();
             }
 
             return nextInput;

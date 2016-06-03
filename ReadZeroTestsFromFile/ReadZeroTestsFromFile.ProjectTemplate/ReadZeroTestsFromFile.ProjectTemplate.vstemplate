@@ -20,21 +20,17 @@
       </Folder>
       <Folder Name="libs">
         <ProjectItem>ReadZeroTestsFromFile.ProblemSolving.dll</ProjectItem>
+        <ProjectItem>Microsoft.Practices.ServiceLocation.dll</ProjectItem>
+        <ProjectItem>Microsoft.Practices.Unity.Configuration.dll</ProjectItem>
+        <ProjectItem>Microsoft.Practices.Unity.dll</ProjectItem>
+        <ProjectItem>Microsoft.Practices.Unity.RegistrationByConvention.dll</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">MyProblemSolver.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" OpenInEditor="false">Program.cs</ProjectItem>
-      <ProjectItem>unity.4.0.1.nupkg</ProjectItem>
-      <ProjectItem>commonservicelocator.1.3.0.nupkg</ProjectItem>
     </Project>
   </TemplateContent>
   <WizardExtension>
-    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
-    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+    <Assembly>ReadZeroTestsFromFile.Extension, Version=1.0.0.0, Culture=neutral, PublicKeyToken=411e5b506a948d1a</Assembly>
+    <FullClassName> ReadZeroTestsFromFile.Extension.InitializationWizard</FullClassName>
   </WizardExtension>
-  <WizardData>
-    <packages repository="template">
-      <package id="Unity" version="4.0.1" />
-      <package id="CommonServiceLocator" version="1.3.0" />
-    </packages>
-  </WizardData>
 </VSTemplate>
