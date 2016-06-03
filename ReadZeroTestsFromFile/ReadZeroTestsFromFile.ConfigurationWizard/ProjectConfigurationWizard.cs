@@ -3,41 +3,47 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using EnvDTE;
 using Microsoft.VisualStudio.TemplateWizard;
+using ReadZeroTestsFromFile.ConfigurationWizard.Windows;
 
 namespace ReadZeroTestsFromFile.ConfigurationWizard
 {
     public class ProjectConfigurationWizard : IWizard
     {
+        //private DTE _dte;
+
         public void RunStarted(object automationObject, Dictionary<string, string> replacementsDictionary, WizardRunKind runKind, object[] customParams)
         {
-            throw new Exception("My Exception");
+            replacementsDictionary.Add("$inputSource$", "Console");
+            //var configurationWindow = new ProjectConfigurationWindow();
+            //var dialogResult = configurationWindow.ShowDialog();
         }
 
         public void ProjectFinishedGenerating(Project project)
         {
-            throw new NotImplementedException();
+               
         }
 
         public void ProjectItemFinishedGenerating(ProjectItem projectItem)
         {
-            throw new NotImplementedException();
+            
         }
 
         public bool ShouldAddProjectItem(string filePath)
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public void BeforeOpeningFile(ProjectItem projectItem)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void RunFinished()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

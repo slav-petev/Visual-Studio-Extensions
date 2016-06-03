@@ -15,8 +15,8 @@
   <TemplateContent>
     <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-      <Folder Name="Input">
-        <ProjectItem>Input.txt</ProjectItem>
+      <Folder Name="Infrastructure">
+        <ProjectItem ReplaceParameters="true">UnityConfigurator.cs</ProjectItem>
       </Folder>
       <Folder Name="libs">
         <ProjectItem>ReadZeroTestsFromFile.ProblemSolving.dll</ProjectItem>

@@ -1,8 +1,9 @@
 ﻿using Microsoft.Practices.Unity;
+using ReadZeroTestsFromFile.ProblemSolving.Common;
 using ReadZeroTestsFromFile.ProblemSolving.Input;
 using ReadZeroTestsFromFile.ProblemSolving.Output;
 
-namespace ReadZeroTestsFromFile.ProblemSolving.Infrastructure
+namespace ReadZeroTestsFromFile.ProjectTemplate.Infrastructure
 {
     public static class UnityConfigurator
     {
@@ -13,13 +14,11 @@ namespace ReadZeroTestsFromFile.ProblemSolving.Infrastructure
 
         private static void RegisterTypes(IUnityContainer container)
         {
-#if DEBUG
-            container.RegisterType<IInputReader, TextFileInputReader>();
-#else
-            container.RegisterType<IInputReader, ConsoleInputReader>();
-#endif
-            container.RegisterType<IInputParser, InputParser>();
-
+            container.RegisterType<IInputReader, TextFileInputReader>("TextFile");
+            container.RegisterType<IInputReader, ConsoleInputReader>("Console");
+                ;
+            container.RegisterType<IInputParser, InputParser>(new InjectionConstructor(
+                new ResolvedParameter<IInputReader>("$inputSource$")));
             container.RegisterType<IOutputWriter, ConsoleOutputWriter>();
         }
     }

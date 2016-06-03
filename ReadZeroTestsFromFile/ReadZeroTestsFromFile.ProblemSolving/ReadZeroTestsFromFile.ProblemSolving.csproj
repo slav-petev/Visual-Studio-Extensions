@@ -63,7 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Infrastructure\UnityConfigurator.cs" />
+    <Compile Include="Common\Constants.cs" />
     <Compile Include="Input\ConsoleInputReader.cs" />
     <Compile Include="Input\IFileInputReader.cs" />
     <Compile Include="Input\IInputParser.cs" />

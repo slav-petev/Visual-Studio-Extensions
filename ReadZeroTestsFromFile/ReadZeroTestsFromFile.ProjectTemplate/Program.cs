@@ -2,8 +2,8 @@
 using System.Diagnostics;
 using System.IO;
 using Microsoft.Practices.Unity;
-using ReadZeroTestsFromFile.ProblemSolving.Infrastructure;
 using ReadZeroTestsFromFile.ProjectTemplate;
+using ReadZeroTestsFromFile.ProjectTemplate.Infrastructure;
 
 public class Program
 {

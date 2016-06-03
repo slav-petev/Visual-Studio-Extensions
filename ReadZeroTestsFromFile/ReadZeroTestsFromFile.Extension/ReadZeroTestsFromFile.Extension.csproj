@@ -62,6 +62,12 @@
     <Content Include="stylesheet.css" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ReadZeroTestsFromFile.ConfigurationWizard\ReadZeroTestsFromFile.ConfigurationWizard.csproj">
+      <Project>{E9FC6DBB-BE43-489B-A055-A96C4FA7789C}</Project>
+      <Name>ReadZeroTestsFromFile.ConfigurationWizard</Name>
+      <IncludeOutputGroupsInVSIX>BuiltProjectOutputGroup%3bBuiltProjectOutputGroupDependencies%3bGetCopyToOutputDirectoryItems%3bSatelliteDllsProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+      <IncludeOutputGroupsInVSIXLocalOnly>DebugSymbolsProjectOutputGroup%3b</IncludeOutputGroupsInVSIXLocalOnly>
+    </ProjectReference>
     <ProjectReference Include="..\ReadZeroTestsFromFile.ProjectTemplate\ReadZeroTestsFromFile.ProjectTemplate.csproj">
       <Project>{764E642F-02D2-4CB2-BF5B-49ED7095886F}</Project>
       <Name>ReadZeroTestsFromFile.ProjectTemplate</Name>

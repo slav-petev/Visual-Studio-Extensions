@@ -63,7 +63,8 @@
 		<Reference Include="System.Xml"/>
 	</ItemGroup>
 	<ItemGroup>
-		<None Include="Input\Input.txt" />
+    <Compile Include="Infrastructure\UnityConfigurator.cs" />
+    
     <None Include="libs\ReadZeroTestsFromFile.ProblemSolving.dll" />
     <None Include="libs\Microsoft.Practices.ServiceLocation.dll" />
     <None Include="libs\Microsoft.Practices.Unity.Configuration.dll" />

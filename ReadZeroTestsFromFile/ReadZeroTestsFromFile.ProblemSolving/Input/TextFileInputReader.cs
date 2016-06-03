@@ -17,6 +17,8 @@ namespace ReadZeroTestsFromFile.ProblemSolving.Input
             _fileInputReader = new StreamReader(FilePath);
         }
 
+        public string InputSource => "Text File";
+
         public string ReadNextInputLine()
         {
             if (_disposed)

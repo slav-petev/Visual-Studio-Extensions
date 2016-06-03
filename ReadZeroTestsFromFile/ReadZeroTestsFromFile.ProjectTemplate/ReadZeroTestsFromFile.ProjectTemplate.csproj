@@ -92,6 +92,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\UnityConfigurator.cs" />
     <Compile Include="MyProblemSolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -119,7 +120,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Input\Input.txt" />
     <Content Include="ReadZeroTestsFromFIle.ico" />
   </ItemGroup>
   <ItemGroup>
